@@ -4,7 +4,7 @@ import  Logo from '../../images/logo-dark.png'
 
 const Header = () => {
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-100 lg:px-28">
             <div className="flex-1">
                 <Link to='/' className="w-36"><img src={Logo} alt="" /></Link>
             </div>
