@@ -34,9 +34,37 @@ const Home = () => {
                                     <p>We are always be on time and ready to give you the.</p>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div className='lg:px-28'>
+                <div>
+                    <div>
+                    <h1 className="text-5xl font-bold pb-6 text-center">Photography Work Examples</h1>
+                    </div>
+                </div>
+                <div className="carousel w-full">
+                    <div id="item1" className="carousel-item w-full">
+                        <img src="https://ath2.unileverservices.com/wp-content/uploads/sites/3/2017/10/best-wedding-hair-half-up-twist-min.jpg" className="w-full" />
+                    </div>
+                    <div id="item2" className="carousel-item w-full">
+                        <img src="https://pbs.twimg.com/media/EDrmUfQUUAEESMi.jpg" className="w-full" />
+                    </div>
+                    <div id="item3" className="carousel-item w-full">
+                        <img src="https://advancedfamilydentistryoffairbanks.com/wp-content/uploads/2018/04/wedding-1c.jpg" className="w-full" />
+                    </div>
+                    <div id="item4" className="carousel-item w-full">
+                        <img src="https://glamours.name/uploads/posts/2022-02/1645115247_1-glamours-name-p-svadebnii-rolik-krasivo-foto-1.jpg" className="w-full" />
+                    </div>
+                </div>
+                <div className="flex justify-center w-full py-2 gap-2">
+                    <a href="#item1" className="btn btn-xs">1</a>
+                    <a href="#item2" className="btn btn-xs">2</a>
+                    <a href="#item3" className="btn btn-xs">3</a>
+                    <a href="#item4" className="btn btn-xs">4</a>
                 </div>
             </div>
         </div>
