@@ -10,9 +10,10 @@ const Header = () => {
             </div>
             <div className="flex-none">
                 <ul className="menu menu-horizontal p-0 text-xl">
-                    <Link to='/'>Home</Link>
-                    <Link to='/blog' className='mx-3'>Blog</Link>
-                    <Link to='/service'>Service</Link>
+                    <Link to='/' className='mr-3'>Home</Link>
+                    <Link to='/blog' className='mr-3'>Blog</Link>
+                    <Link to='/service' className='mr-3'>Service</Link>
+                    <Link to='/login' className='mr-3'>Log In</Link>
                 </ul>
             </div>
         </div>

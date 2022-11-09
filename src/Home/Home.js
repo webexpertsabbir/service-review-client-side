@@ -9,7 +9,7 @@ const Home = () => {
         <div>
             <Banner></Banner>
 
-            <div className="hero min-h-screen bg-base-200 lg:px-28">
+            <div className="hero min-h-screen bg-base-200 lg:px-28 py-14">
                 <div className="hero-content flex-col lg:flex-row">
                     <img src={singelImage} className="max-w-sm rounded-lg shadow-2xl" />
                     <div className='ml-12'>
