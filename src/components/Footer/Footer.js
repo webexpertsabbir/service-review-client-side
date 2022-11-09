@@ -5,7 +5,8 @@ import gallary from '../../images/Screenshot_4.png'
 
 const Footer = () => {
     return (
-        <footer className="footer p-10 bg-base-200 text-base-content text-lg">
+        <div>
+            <footer className="footer p-10 bg-base-200 text-base-content text-lg">
             <div>
             <Link to='/' className="w-36"><img src={Logo} alt="" /></Link>
                 <p>We’ve delivered fabulous <br /> wedding event experiences over <br /> the last two decades and are now <br /> poised to chart out a whole new <br /> growth story.</p>
@@ -29,6 +30,9 @@ const Footer = () => {
                 <img src={gallary} alt="" />
             </div>
         </footer>
+        <hr />
+        <p className='text-center py-3 text-lg'>Copyright © 2020. All rights reserved</p>
+        </div>
     );
 };
 
