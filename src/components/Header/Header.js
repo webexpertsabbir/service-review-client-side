@@ -23,9 +23,6 @@ const Header = () => {
                     <Link to='/blog' className='mr-3'>Blog</Link>
                     <Link to='/service' className='mr-3'>Service</Link>
 
-     
-                    
-
                     {
                         user?.uid ?
                             <>
