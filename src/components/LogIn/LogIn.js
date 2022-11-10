@@ -3,9 +3,11 @@ import React, { useContext } from 'react';
 import { FaGoogle } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthProvider/AuthProvider';
+import useTitle from '../../hooks/useTitle';
 
 
 const LogIn = () => {
+    useTitle('Log In')
 
     const { signIn, providerLogin } = useContext(AuthContext)
 

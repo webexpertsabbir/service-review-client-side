@@ -7,8 +7,10 @@ import LimitServices from '../components/LimitServices/LimitServices';
 import { Link } from 'react-router-dom';
 import 'react-photo-view/dist/react-photo-view.css';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
+import useTitle from '../hooks/useTitle';
 
 const Home = () => {
+    useTitle('Home')
 
     const [services, setServices] = useState([]);
 
