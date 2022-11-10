@@ -1,10 +1,29 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Banner from '../components/Banner/Banner';
 import singelImage from '../images/single-img11.jpg';
 import { FaBuromobelexperte } from 'react-icons/fa';
 import { FaAward } from 'react-icons/fa';
+import LimitServices from '../components/LimitServices/LimitServices';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
+
+    const [services, setServices] = useState([]);
+
+    useEffect(() => {
+
+        fetch('http://localhost:5000/services')
+            .then(res => res.json())
+            .then(data => setServices(data))
+
+            .catch(error => console.log(error))
+
+
+    }, [])
+
+
+
+
     return (
         <div>
             <Banner></Banner>
@@ -40,10 +59,26 @@ const Home = () => {
                 </div>
             </div>
 
+
+            <div className='lg:px-28  pb-24'>
+                <h1 className="text-5xl font-bold pb-12">Services</h1>
+                <div className='grid md:grid-cols-3  gap-5 '>
+                    {
+                        services.map(service => <LimitServices
+                            key={service._id}
+                            service={service}
+                        ></LimitServices>)
+                    }
+                </div>
+                <Link to='/service'>
+                    <button className="btn btn-warning my-5">Se All</button>
+                </Link>
+            </div>
+
             <div className='lg:px-28'>
                 <div>
                     <div>
-                    <h1 className="text-5xl font-bold pb-6 text-center">Photography Work Examples</h1>
+                        <h1 className="text-5xl font-bold pb-12">Photography Work Examples</h1>
                     </div>
                 </div>
                 <div className="carousel w-full">
