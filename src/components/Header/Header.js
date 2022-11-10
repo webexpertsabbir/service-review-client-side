@@ -21,7 +21,7 @@ const Header = () => {
                 <ul className="menu menu-horizontal p-0 text-xl">
                     <Link to='/' className='mr-3'>Home</Link>
                     <Link to='/blog' className='mr-3'>Blog</Link>
-                    <Link to='/service' className='mr-3'>Service</Link>
+                    <Link to='/services' className='mr-3'>Service</Link>
 
                     {
                         user?.uid ?

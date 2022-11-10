@@ -12,7 +12,7 @@ const Banner = () => {
                     <div>
                         <h1 className="mb-5 text-6xl font-bold">Professional <br /> Wedco Photography</h1>
                         <p className="mb-5 text-xl">The argument in favor of using filler text this your goes something like this. <br /> review point you’ll end up reviewing lorem and negotiating.</p>
-                        <Link to='/service'>
+                        <Link to='/services'>
                             <button className="btn btn-outline btn-warning px-7">Service</button>
                         </Link>
                     </div>

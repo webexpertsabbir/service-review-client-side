@@ -14,7 +14,7 @@ const LimitServices = ({ service }) => {
                 <div className='flex content-betwien py-5'>
                     <p className='text-2xl text-orange-600 font-semibold'>Price: ${price}</p>
                     <div className="card-actions justify-end">
-                        <Link to={`/checkout/${_id}`}>
+                        <Link to={`/service/${_id}`}>
                             <button className="btn btn-warning btn-sm">Details</button>
                         </Link>
                     </div>

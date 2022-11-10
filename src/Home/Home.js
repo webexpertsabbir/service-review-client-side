@@ -70,7 +70,7 @@ const Home = () => {
                         ></LimitServices>)
                     }
                 </div>
-                <Link to='/service'>
+                <Link to='/services'>
                     <button className="btn btn-warning my-5">Se All</button>
                 </Link>
             </div>
