@@ -5,6 +5,8 @@ import { FaBuromobelexperte } from 'react-icons/fa';
 import { FaAward } from 'react-icons/fa';
 import LimitServices from '../components/LimitServices/LimitServices';
 import { Link } from 'react-router-dom';
+import 'react-photo-view/dist/react-photo-view.css';
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 
 const Home = () => {
 
@@ -30,7 +32,16 @@ const Home = () => {
 
             <div className="hero min-h-screen bg-base-200 lg:px-28 py-14">
                 <div className="hero-content flex-col lg:flex-row">
-                    <img src={singelImage} className="max-w-sm rounded-lg shadow-2xl" />
+                   
+                    <PhotoProvider>
+                        <div className="foo">
+
+                            <PhotoView src={singelImage}>
+                            <img src={singelImage} className="max-w-sm rounded-lg shadow-2xl" />
+                            </PhotoView>
+
+                        </div>
+                    </PhotoProvider>
                     <div className='ml-12'>
                         <h1 className="text-5xl font-bold">The Best Wedding Photography Studio In Town</h1>
                         <p className="py-6">The argument in favor of using filler text this your goes something like this review point you’ll end up reviewing lorem and negotiating the content itself and not the favor of design by injected rando mised words which don’t look even slightly believable. He take care of about this all.</p>

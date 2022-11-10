@@ -1,5 +1,7 @@
 import React from 'react';
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 import { Link } from 'react-router-dom';
+import 'react-photo-view/dist/react-photo-view.css';
 
 const LimitServices = ({ service }) => {
     const { _id, img, price, title, description } = service;
@@ -7,7 +9,17 @@ const LimitServices = ({ service }) => {
 
     return (
         <div className="card card-compact  bg-base-100 shadow-xl">
-            <figure><img src={img} alt="Shoes" /></figure>
+             <figure>
+                <PhotoProvider>
+                    <div className="foo">
+
+                        <PhotoView src={img}>
+                            <img src={img} alt="" />
+                        </PhotoView>
+
+                    </div>
+                </PhotoProvider>
+            </figure>
             <div className="card-body">
                 <h2 className="card-title">{title}</h2>
                 <p>{description.slice(1, 100)} ...</p>
