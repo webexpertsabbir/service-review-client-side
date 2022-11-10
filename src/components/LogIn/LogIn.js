@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaGoogle } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 const LogIn = () => {
     return (
         <div>
@@ -21,9 +22,9 @@ const LogIn = () => {
                                 <label className="label">
                                     <span className="label-text">Password</span>
                                 </label>
-                                <input type="text" placeholder="password" className="input input-bordered" />
+                                <input type="password" placeholder="password" className="input input-bordered" />
                                 <label className="label">
-                                    <a href="#" className="label-text-alt link link-hover">Please Register?</a>
+                                    <Link to='/signup' className="label-text-alt link link-hover">Please Register?</Link>
                                 </label>
                             </div>
                             <div className="form-control mt-6">
