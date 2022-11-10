@@ -39,7 +39,7 @@ const router = createBrowserRouter([
             {
                 path: '/service/:id',
                 element: <SingelService></SingelService>,
-                loader: ({params})=> fetch(`http://localhost:5000/services/${params.id}`)
+                loader: ({params})=> fetch(`https://photography-server-seven.vercel.app/services/${params.id}`)
             },
             {
                 path: '/my-reviews',
