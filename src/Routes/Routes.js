@@ -8,6 +8,7 @@ import SingelService from "../components/Service/SingelService";
 import SignUp from "../components/SignUp/SignUp";
 import Home from "../Home/Home";
 import Main from "../layout/Main";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
 
 
 const router = createBrowserRouter([
@@ -42,7 +43,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/my-reviews',
-                element: <MyReviews></MyReviews>
+                element: <PrivateRoute><MyReviews></MyReviews></PrivateRoute>
             },
             {
                 path: '/add-service',
