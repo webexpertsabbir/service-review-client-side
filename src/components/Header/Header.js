@@ -26,6 +26,8 @@ const Header = () => {
                     {
                         user?.uid ?
                             <>
+                                <Link to='/add-service' className='mr-3'>Add Service</Link>
+                                <Link to='/my-reviews' className='mr-3'>My Reviews</Link>
                                 <span className='text-yellow-500'> {user?.displayName}</span>
                                 <button className='btn btn-sm btn-warning mx-3' onClick={handelLogOut}>Log Out</button>
 
